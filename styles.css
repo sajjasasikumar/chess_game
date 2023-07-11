@@ -1,0 +1,107 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.parentcontainer{
+    display: flex;
+    margin: 0px;
+    position: relative;
+    justify-content: space-evenly;
+    background-color: rgb(20, 32, 61);
+    height: 100vh;
+    box-shadow: 0 0 5px 5px rgb(161, 8, 222);
+}
+
+#pic{
+    width: 99vw;
+    height: 98vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -100;
+    filter: blur(0.5);
+    mix-blend-mode: hue;
+}
+.container{
+    display: inline-flex;
+    width: 90vw;
+    height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+}
+#gameboard{
+    width: 560px;
+    height: 560px;
+    background-color: rgb(112, 66, 6);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: solid black 10px;
+    box-shadow: 0 0 10px 10px rgb(222, 8, 8);
+}
+
+.square{
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.square svg{
+    width: 57px;
+    height: 57px;
+    margin: 8px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    position: relative;
+    z-index: -9;
+}
+
+path{
+    position: relative;
+    z-index: -10;
+    
+}
+.path :hover{
+    box-sizing: border-box;
+}
+.piece{
+    position: relative;
+    z-index: 9;
+}
+
+.beige{
+    background-color: rgb(217, 156, 86);
+}
+
+.black{
+    fill: rgb(28,28,28);
+}
+
+.white{
+    fill: rgb(255,255,255);
+}
+
+p{
+    font-size: larger;
+    margin: 30px;
+    -ms-flex-align: baseline;
+    color: white;
+    border: solid black;
+}
+
+#info{
+    width: 190px;
+    height: 90px;
+    float: right;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+
+#player{
+    font-size: larger;
+    font-weight: bolder;
+}
